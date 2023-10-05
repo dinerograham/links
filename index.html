@@ -9,57 +9,101 @@
       padding-top: 30px;
       padding-bottom: 30px;
     }
-  </style>
-</head>
-<body>
-  <div class="banner">
-      <img src="Dinero_headshot.png"  alt="Dinero Graham headshot"  class="banner-image">
-  </div>
-
-  <style>
     .banner-image {
       width: 128px;
       height: 128px;
       object-fit: cover;
       border-radius: 128px;
     }
-  </style>
-
-  <div class="name">
-      Dinero
-  </div>
-
-  <div>
-    <style>
-      div {
-        width: 200px;
-        padding: 20px;
-        border: solid  5px;
-        margin: 30px;
-        font-size: 50px
-      }
       
-      .boxed-in {
-        color: rgba(255, 0, 242, 0.418)
-      }
-    </style>
+    .boxed-in {
+      color: rgba(255, 0, 242, 0.418);
+      width: 200px;
+      padding: 20px;
+      border: solid red 5px;
+      margin-top: 80px;
+      margin-bottom: 200px;
+      font-size: 50px;
+    }
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+    body {
+  background-color: #004643;
+  display: flex;
+  justify-content: center;
+}
 
-      <img src="/images/Github_Logo.png"  alt="GitHub Logo">
-      <a class="boxed-in" href="https://github.com/dinerograham" target="_blank">
-        GitHub
-      </a>
-  </div>
-  <div>
-      <img src="/images/LinkedIn_Logo.png"  alt="LinkedIn Logo">
-      <a class="boxed-in" href="https://www.linkedin.com/in/dinero-graham/" target="_blank">
-        LinkedIn
-      </a>
-  </div>
-  <div>
-      <img src="/images/Facebook_logo.png"  alt="Facebook Logo">
-      <a class="boxed-in" href="https://www.facebook.com/dinero.gram.9/" target="_blank">
-        Facebook
-      </a>
+.name {
+  color: #fffffe;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #fffffe;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  background-color: #f9bc60;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.link a {
+  color: #001e1d;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  flex-grow: 1;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+}
+  </style>
+</head>
+<body>
+  <div class="items">
+    <div class="banner">
+        <img src="/images/Dinero_headshot.png"  alt="Dinero Graham headshot"  class="banner-image">
+    </div>
+
+    <div class="name">
+        Dinero
+    </div>
+
+    <div class="link">
+        <img src="/images/Github_Logo.png"  alt="GitHub Logo"  class="thumbnail">
+        <a href="https://github.com/dinerograham" target="_blank">
+          GitHub
+        </a>
+    </div>
+    <div class=link>
+        <img src="/images/LinkedIn_Logo.png"  alt="LinkedIn Logo"  class="thumbnail">
+        <a href="https://www.linkedin.com/in/dinero-graham/" target="_blank">
+          LinkedIn
+        </a>
+    </div>
+    <div class="link">
+        <img src="/images/Facebook_logo.png"  alt="Facebook Logo"  class="thumbnail">
+        <a href="https://www.facebook.com/dinero.gram.9/" target="_blank">
+          Facebook
+        </a>
+    </div>
   </div>
 </body>
 </html>
